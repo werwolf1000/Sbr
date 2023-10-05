@@ -54,9 +54,9 @@ class Parser
         $current = date('Y-m-d');
         $monday = date('Y-m-d', strtotime('last week Monday'));
         $stop_date = date('Y-m-d', strtotime($monday . ' +1 day'));
-        $days = [$monday];
+        $days = [date_format(date_create($monday),"d/m/Y")];
         while($stop_date <= $current) {
-            $days[] = $stop_date;
+            $days[] = date_format(date_create($stop_date),"d/m/Y");
             $stop_date = date('Y-m-d', strtotime($stop_date . ' +1 day'));
         }
         return $days;

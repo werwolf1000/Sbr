@@ -23,19 +23,20 @@ docker-compose run task php index.php bash
 ```shell
 root@cb3391b49050:/var/www# php index.php 
 array(10) {
-  ["2023-09-25"]=>
+  ["25/09/2023"]=>
   array(3) {
     [0]=>
-    string(11) "USD=99,4555"
+    string(11) "USD=96,0419"
     [1]=>
-    string(12) "EUR=104,3024"
+    string(12) "EUR=102,2485"
     [2]=>
-    string(11) "KGS=11,2113"
+    string(11) "KGS=10,8265"
   }
+
   
   .....
   
-    ["2023-10-04"]=>
+  ["05/10/2023"]=>
   array(3) {
     [0]=>
     string(11) "USD=99,4555"
@@ -44,4 +45,5 @@ array(10) {
     [2]=>
     string(11) "KGS=11,2113"
   }
+
 ```
